@@ -24,8 +24,11 @@ For the pre-training of our language model, a massive amount of data was require
 First, for each document in every dataset, we separated sentences and removed those that met any of the following criteria:
 
 📝 Sentences with fewer than five words.
+
 ❌ Sentences that do not end with valid Persian end-of-sentence marks.
+
 🚫 Sentences containing specific keywords from Persian webpages and JavaScript code.
+
 After sentence filtering, we excluded documents with fewer than three sentences remaining.
 
 Next, we utilized the langdetect package to filter out non-Persian documents, keeping only those with a Persian language probability of 0.99 or higher.
