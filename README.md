@@ -22,7 +22,7 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 - Clean and tokenize Persian text data.  
 - Ensure compatibility with BART's architecture.  
 
-### 🚦 **Pretraining Execution:** *(Previously "Running Pretraining")*  
+### 🚦 **Pretraining Execution:**
 - Utilize **Hugging Face Transformers** and **PyTorch** for model training.  
 - Configure **batch size**, **learning rate**, and **epoch settings**.  
 
