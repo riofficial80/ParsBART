@@ -28,11 +28,12 @@ The tokenizer is configured with the following parameters:
 - **vocab_size=52000**: Sets the vocabulary size to **52,000 tokens**, balancing model expressiveness with memory efficiency.
 - **min_frequency=10**: Establishes the minimum token frequency required for inclusion in the vocabulary, ensuring that rare tokens are excluded to improve model generalization.
 - **special_tokens**: Defines a list of special tokens reserved for model-specific tasks:
-  - *<s>*: Start-of-sequence token.
-  - *<pad>*: Padding token used to align batch sizes during training and inference.
-  - *</s>*: End-of-sequence token.
-  - *<unk>*: Unknown token for out-of-vocabulary words.
-  - *<mask>*: Masking token used in masked language modeling tasks.
+  - `<s>`: Start-of-sequence token.
+  - `<pad>`: Padding token.
+  - `</s>`: End-of-sequence token.
+  - `<unk>`: Unknown token.
+  - `<mask>`: Masking token.
+
 
 
 The trained tokenizer is **saved** in a **format compatible** with the **`transformers` library**, enabling **smooth integration** with the **BART model** for **Persian text processing**.  
