@@ -18,6 +18,9 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 
 ## 🔄 **Pretraining Process:**  
 
+### 📖 **Training BART Tokenizer:**  
+
+
 ### ⚙️ **Data Preprocessing:**  
 For the pre-training of our language model, a massive amount of data was required. While large datasets were collected, they needed to be thoroughly cleaned to ensure data quality. We implemented a heuristic function to create an automatic cleaning pipeline for our pre-training datasets.
 
@@ -76,10 +79,12 @@ ri.official80@gmail.com
 ### 🚦 **Pretraining Execution:**
 - Utilize **Hugging Face Transformers** and **PyTorch** for model training.  
 - Configure **batch size**, **learning rate**, and **epoch settings**.  
-#### **Training BART Tokenizer:**
+
+
 #### 🧬 **Model Architecture:**  
 - **Encoder-Decoder** structure with **6 layers** in each.  
 - Optimized for **Persian language tasks**.  
+
 
 #### 📑 **Pretraining Arguments:**  
 - `--max_length 256`  
