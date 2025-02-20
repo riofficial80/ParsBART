@@ -64,6 +64,9 @@ To save time during pretraining, we applied various perturbation functions [3] d
 All preprocessing code can be found in the **data_preparation.ipynb** script, located at:
 
 
+To access cleaned dataset, please contact using the following email:
+ri.official80@gmail.com
+
 
 ### 🚦 **Pretraining Execution:**
 - Utilize **Hugging Face Transformers** and **PyTorch** for model training.  
