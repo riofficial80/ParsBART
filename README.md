@@ -1,7 +1,7 @@
 # Persian_BART
 6-Layer BART for Persian Language
 
-This repository hosts a 6-layer BART (Bidirectional and Auto-Regressive Transformers) model, pretrained exclusively on Persian text data (Naab dataset [1]: https://huggingface.co/datasets/SLPL/naab-raw). The model is designed to handle natural language processing (NLP) tasks with a context length of 256 tokens.
+This repository hosts a 6-layer BART (Bidirectional and Auto-Regressive Transformers) model, pretrained exclusively on Persian text data (Naab dataset [1]: https://huggingface.co/datasets/SLPL/naab). The model is designed to handle natural language processing (NLP) tasks with a context length of 256 tokens.
 
 🧠 Key Features:
 - **Architecture**: BART with 6 encoder and 6 decoder layers.
@@ -12,7 +12,7 @@ This repository hosts a 6-layer BART (Bidirectional and Auto-Regressive Transfor
 ## Pretraining
 ### Data Preprocessing
 ### Model Architecture
-## Fintuning
+## Finetuning
 ### NLU tasks
 #### Sentiment Analysis
 #### Text Classification
