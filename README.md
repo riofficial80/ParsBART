@@ -59,6 +59,11 @@ To save time during pretraining, we applied various perturbation functions [3] d
 - Sentence Permutation: Randomly shuffle sentences within documents.
 
 #### Dataset Statistics:
+Number of cleaned documents
+Size of dataset
+Number of documents per perturbation function
+Number of rows that has been cleaned from naab
+Total size of naab that we used for cleaning
 
 #### Code and Dataset Availability:
 All preprocessing code can be found in the **data_preparation.ipynb** script, located at:
