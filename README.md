@@ -21,7 +21,7 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 ### ⚙️ **Data Preprocessing:**  
 For the pre-training of our language model, a massive amount of data was required. While large datasets were collected, they needed to be thoroughly cleaned to ensure data quality. We implemented a heuristic function to create an automatic cleaning pipeline for our pre-training datasets.
 
-First, for each document in every dataset, we separated sentences and removed those that met any of the following criteria:
+First, for each document in our dataset, we separated sentences and removed those that met any of the following criteria:
 
 - 📝 Sentences with fewer than five words.
 
@@ -36,6 +36,30 @@ Next, we utilized the langdetect package to filter out non-Persian documents, ke
 Finally, we removed duplicate paragraphs from documents to maintain content uniqueness.
 
 This preprocessing procedure was exclusively applied to the pre-training datasets.
+
+#### Limitations:
+- Large Dataset Size: The Naab dataset is extremely large, which posed challenges in processing with limited computational resources.
+- Resource Constraints: We had access only to Google Colab Free, which: Limits session duration to 12 hours.
+- Is vulnerable to interruptions, such as internet connection drops, which could terminate the session unexpectedly.
+
+#### Handling Colab Session Limitations:
+To address these challenges, we adopted the following strategies:
+
+- Streaming Data: Leveraged the streaming feature of Hugging Face Datasets to clean each row individually without needing to load the entire dataset into memory.
+- 
+- Session Recovery: Stored the index of the last cleaned row in a file, allowing us to resume preprocessing from the same point in case of session disconnection.
+
+#### Preprocessing Optimizations:
+To save time during pretraining, we applied various perturbation functions during preprocessing, including:
+
+- Token Infilling: Randomly replace tokens with a mask.
+- Token Deletion: Remove random tokens from the input.
+- Token Masking: Mask specific tokens for model learning.
+- Document Rotation: Rotate sections of documents to improve model generalization.
+- Sentence Permutation: Randomly shuffle sentences within documents.
+
+#### Code Availability:
+All preprocessing code can be found in the **data_preparation.ipynb** script, located at:
 
 
 
