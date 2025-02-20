@@ -16,7 +16,27 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 
 ---
 
-## 📖 **Training BART Tokenizer:**  
+## 🔡 **Train BART Tokenizer:**  
+
+To train BART Tokenizer you can use **train_tokenizer.ipynb** scrip that is used to **train a custom tokenizer** on the **PN-summary dataset**, employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
+
+In what follows, you can see some statistics of the PN-summary dataset:
+(The statistics will be added in the future.)
+
+The tokenizer is configured with the following parameters:
+
+- vocab_size=52000: Defines the vocabulary size to be 52,000 tokens, balancing model expressiveness and memory efficiency.
+- min_frequency=10: Sets the minimum frequency for a token to be included in the vocabulary, ensuring rare tokens are excluded to improve model generalization.
+- special_tokens: Specifies a list of special tokens for model-specific tasks:
+-- <s>: Start of a sequence token.
+-- <pad>: Padding token to align batch sizes during training and inference.
+-- </s>: End of a sequence token.
+-- <unk>: Unknown token, used for out-of-vocabulary words.
+-- <mask>: Masking token for masked language modeling tasks.
+
+The trained tokenizer is **saved** in a **format compatible** with the **`transformers` library**, enabling **smooth integration** with the **BART model** for **Persian text processing**.  
+
+
 
 ---
 
