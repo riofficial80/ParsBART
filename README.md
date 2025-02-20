@@ -104,7 +104,7 @@ ri.official80@gmail.com
 ---
 
 ## 📚 **References:**  
-[1] **Sabouri, S., Rahmati, E., Gooran, S. and Sameti, H.**, 2024. *naab: A ready-to-use plug-and-play corpus for Farsi.* *Journal of Artificial Intelligence, Applications and Innovations, 1(2), pp.1-8.*  
+[1] **Sabouri, S., Rahmati, E., Gooran, S. and Sameti, H.**, 2024. *naab: A ready-to-use plug-and-play corpus for Farsi.* *Journal of Artificial Intelligence, Applications and Innovations, 1(2), pp.1-8.*
 [📄 Full Paper](https://jaiai.iranaiai.ir/article_211486_3e490bce92a8af967a56870c8d200e90.pdf)  
 
 [2] **Salemi, A., Kebriaei, E., Minaei, G.N. and Shakery, A.**, 2021. *Arman: Pre-training with semantically selecting and reordering of sentences for persian abstractive summarization*. *arXiv preprint arXiv:2109.04098.*
