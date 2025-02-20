@@ -19,13 +19,18 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 ## 🔄 **Pretraining Process:**  
 
 ### ⚙️ **Data Preprocessing:**  
+Large size: so we need to do preprocessing steps before pretraining. Moreover, we made use of streaming feature of huggingface dataset to clean each row at a time without loading all data
+
+We do the following actions on each row of naab dataset:
+
+
 - Clean and tokenize Persian text data.  
 - Ensure compatibility with BART's architecture.  
 
 ### 🚦 **Pretraining Execution:**
 - Utilize **Hugging Face Transformers** and **PyTorch** for model training.  
 - Configure **batch size**, **learning rate**, and **epoch settings**.  
-
+#### **Training BART Tokenizer:**
 #### 🧬 **Model Architecture:**  
 - **Encoder-Decoder** structure with **6 layers** in each.  
 - Optimized for **Persian language tasks**.  
