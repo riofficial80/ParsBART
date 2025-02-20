@@ -11,7 +11,9 @@ This repository hosts a 6-layer BART (Bidirectional and Auto-Regressive Transfor
 
 ## Pretraining
 ### Data Preprocessing
-### Model Architecture
+### Running Pretraining
+#### Model Architecture
+#### Pretraining Arguments
 ## Finetuning
 ### NLU tasks
 #### Sentiment Analysis
