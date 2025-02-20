@@ -39,7 +39,7 @@ This preprocessing procedure was exclusively applied to the pre-training dataset
 
 #### Limitations:
 - Large Dataset Size: The Naab dataset is extremely large, which posed challenges in processing with limited computational resources.
-- Resource Constraints: We had access only to Google Colab Free, which: Limits session duration to 12 hours.
+- Resource Constraints: We had access only to Google Colab Free, which: Limits session duration.
 - Is vulnerable to interruptions, such as internet connection drops, which could terminate the session unexpectedly.
 
 #### Handling Colab Session Limitations:
