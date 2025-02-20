@@ -21,7 +21,7 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 To train BART Tokenizer you can use **train_tokenizer.ipynb** scrip that is used to **train a custom tokenizer** on the **PN-summary dataset**, employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
 
 In what follows, you can see some statistics of the PN-summary dataset:
-(The statistics will be added in the future.)
+
 
 The tokenizer is configured with the following parameters:
 
