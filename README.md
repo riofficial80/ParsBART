@@ -19,13 +19,22 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 ## 🔄 **Pretraining Process:**  
 
 ### ⚙️ **Data Preprocessing:**  
-Large size: so we need to do preprocessing steps before pretraining. Moreover, we made use of streaming feature of huggingface dataset to clean each row at a time without loading all data
+For the pre-training of our language model, a massive amount of data was required. While large datasets were collected, they needed to be thoroughly cleaned to ensure data quality. We implemented a heuristic function to create an automatic cleaning pipeline for our pre-training datasets.
 
-We do the following actions on each row of naab dataset:
+First, for each document in every dataset, we separated sentences and removed those that met any of the following criteria:
+
+📝 Sentences with fewer than five words.
+❌ Sentences that do not end with valid Persian end-of-sentence marks.
+🚫 Sentences containing specific keywords from Persian webpages and JavaScript code.
+After sentence filtering, we excluded documents with fewer than three sentences remaining.
+
+Next, we utilized the langdetect package to filter out non-Persian documents, keeping only those with a Persian language probability of 0.99 or higher.
+
+Finally, we removed duplicate paragraphs from documents to maintain content uniqueness.
+
+This preprocessing procedure was exclusively applied to the pre-training datasets.
 
 
-- Clean and tokenize Persian text data.  
-- Ensure compatibility with BART's architecture.  
 
 ### 🚦 **Pretraining Execution:**
 - Utilize **Hugging Face Transformers** and **PyTorch** for model training.  
