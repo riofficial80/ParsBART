@@ -85,17 +85,17 @@ To save time during pretraining, we applied various perturbation functions [3] d
 - Sentence Permutation: Randomly shuffle sentences within documents.
 
 #### Dataset Statistics:
-| Attribute                                     |   Value    
-|-----------------------------------------------|-----------
-| Number of Cleaned Documents                   | 11500000 
-| Number of Rows Cleaned from NAAB              | 197667045
-| Size of Dataset                               | 38.3 GB
-| Total Size of NAAB Used for Cleaning          | 134 GB     
-| Number of Documents per Perturbation Function | 0     
-| Number of Documents per Perturbation Function | 0  
-| Number of Documents per Perturbation Function | 0  
-| Number of Documents per Perturbation Function | 0  
-| Number of Documents per Perturbation Function | 0  
+| Attribute                                               |   Value    
+|---------------------------------------------------------|-----------
+| Number of Cleaned Documents                             | 11500000 
+| Number of Rows Cleaned from NAAB                        | 197667045
+| Size of Dataset                                         |  19 GB
+| Total Size of NAAB Used for Cleaning                    |  134 GB     
+| Number of Documents per 'document_rotation' Function    | 0     
+| Number of Documents per 'sentence_permutation' Function | 0  
+| Number of Documents per 'token_infilling' Function      | 0  
+| Number of Documents per 'token_masking' Function        | 0  
+| Number of Documents per 'token_deletion' Function      | 0  
 
 #### Code and Dataset Availability:
 All preprocessing code can be found in the **data_preparation.ipynb** script, located at:
