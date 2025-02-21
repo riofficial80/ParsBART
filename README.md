@@ -89,13 +89,13 @@ To save time during pretraining, we applied various perturbation functions [3] d
 |---------------------------------------------------------|-----------
 | Number of Cleaned Documents                             | 11500000 
 | Number of Rows Cleaned from NAAB                        | 197667045
-| Size of Dataset                                         |  19 GB
-| Total Size of NAAB Used for Cleaning                    |  134 GB     
-| Number of Documents per 'document_rotation' Function    | 0     
-| Number of Documents per 'sentence_permutation' Function | 0  
-| Number of Documents per 'token_infilling' Function      | 0  
-| Number of Documents per 'token_masking' Function        | 0  
-| Number of Documents per 'token_deletion' Function      | 0  
+| Size of Dataset                                         | 19 GB
+| Total Size of NAAB Used for Cleaning                    | 134 GB     
+| Number of Documents per 'document_rotation' Function    | 2305006     
+| Number of Documents per 'sentence_permutation' Function | 2291018  
+| Number of Documents per 'token_infilling' Function      | 2305881  
+| Number of Documents per 'token_masking' Function        | 2296858  
+| Number of Documents per 'token_deletion' Function       | 2301237  
 
 #### Code and Dataset Availability:
 All preprocessing code can be found in the **data_preparation.ipynb** script, located at:
