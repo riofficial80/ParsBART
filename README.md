@@ -159,7 +159,7 @@ The model was trained on a single **NVIDIA L4 GPU** for a total of **179,688 ste
 
 ---
 
-## 📚 **References**  {#references}
+## 📚 **References** {#references}
 1. **Sabouri, S., Rahmati, E., Gooran, S. and Sameti, H.**, 2024. *naab: A ready-to-use plug-and-play corpus for Farsi.* *Journal of Artificial Intelligence, Applications and Innovations, 1(2), pp.1-8.*  
    [📄 Full Paper](https://jaiai.iranaiai.ir/article_211486_3e490bce92a8af967a56870c8d200e90.pdf)  
 
