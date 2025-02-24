@@ -159,15 +159,16 @@ The model was trained on a single **NVIDIA L4 GPU** for a total of **179,688 ste
 
 ---
 
-## 📚 **References:**  {#references}
-[1] **Sabouri, S., Rahmati, E., Gooran, S. and Sameti, H.**, 2024. *naab: A ready-to-use plug-and-play corpus for Farsi.* *Journal of Artificial Intelligence, Applications and Innovations, 1(2), pp.1-8.*
-[📄 Full Paper](https://jaiai.iranaiai.ir/article_211486_3e490bce92a8af967a56870c8d200e90.pdf)  
+## 📚 **References**
+1. **Sabouri, S., Rahmati, E., Gooran, S. and Sameti, H.**, 2024. *naab: A ready-to-use plug-and-play corpus for Farsi.* *Journal of Artificial Intelligence, Applications and Innovations, 1(2), pp.1-8.*  
+   [📄 Full Paper](https://jaiai.iranaiai.ir/article_211486_3e490bce92a8af967a56870c8d200e90.pdf)  
 
-[2] **Salemi, A., Kebriaei, E., Minaei, G.N. and Shakery, A.**, 2021. *Arman: Pre-training with semantically selecting and reordering of sentences for persian abstractive summarization*. *arXiv preprint arXiv:2109.04098.*
-[📄 Full Paper](https://arxiv.org/pdf/2109.04098) 
+2. **Salemi, A., Kebriaei, E., Minaei, G.N. and Shakery, A.**, 2021. *Arman: Pre-training with semantically selecting and reordering of sentences for persian abstractive summarization*. *arXiv preprint arXiv:2109.04098.*  
+   [📄 Full Paper](https://arxiv.org/pdf/2109.04098)  
 
-[3] **Lewis, M.**, 2019. *Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension.* *arXiv preprint arXiv:1910.13461.*
-[📄 Full Paper](https://arxiv.org/pdf/1910.13461) 
+3. **Lewis, M.**, 2019. *Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension.* *arXiv preprint arXiv:1910.13461.*  
+   [📄 Full Paper](https://arxiv.org/pdf/1910.13461)  
+
 
 ---
 
