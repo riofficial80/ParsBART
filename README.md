@@ -84,15 +84,18 @@ To save time during pretraining, we applied various perturbation functions [3] d
 
 #### Dataset Statistics:
 
-| Number of Cleaned Documents                           | 11,500,000      |
-| Number of Rows Cleaned from NAAB                      | 197,667,045     |
-| Size of Dataset                                       | 19 GB           |
-| Total Size of NAAB Used for Cleaning                  | 134 GB          |
-| Documents per `document_rotation` Function            | 2,305,006       |
-| Documents per `sentence_permutation` Function         | 2,291,018       |
-| Documents per `token_infilling` Function              | 2,305,881       |
-| Documents per `token_masking` Function                | 2,296,858       |
-| Documents per `token_deletion` Function               | 2,301,237       |
+|                                             |                   |
+|---------------------------------------------|-------------------|
+| Number of Cleaned Documents                  | 11,500,000        |
+| Number of Rows Cleaned from NAAB             | 197,667,045       |
+| Size of Dataset                              | 19 GB             |
+| Total Size of NAAB Used for Cleaning         | 134 GB            |
+| `document_rotation` Function Documents       | 2,305,006         |
+| `sentence_permutation` Function Documents    | 2,291,018         |
+| `token_infilling` Function Documents         | 2,305,881         |
+| `token_masking` Function Documents           | 2,296,858         |
+| `token_deletion` Function Documents          | 2,301,237         |
+
 
 
 #### Code and Dataset Availability:
