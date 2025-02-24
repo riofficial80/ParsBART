@@ -94,7 +94,7 @@ ri.official80@gmail.com
 
 ---
 
-## 🔄 **Pretraining Process:**  
+## 🔄 **Step 3: Pretraining Process:**  
 
 This section details the pretraining process for the BART model. The main pretraining script, `pretrain_base.py`, can be found at the specified path.  
 
@@ -127,7 +127,7 @@ The model was trained on a single **NVIDIA L4 GPU** for a total of **179,688 ste
 
 ---
 
-## 🎯 **Finetuning:**  
+## 🎯 **Step 4: Finetuning:**  
 
 ### 🧠 **Natural Language Understanding (NLU) Tasks:**  
 
