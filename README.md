@@ -18,9 +18,7 @@ This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transf
 
 ## 🔡 **Train BART Tokenizer:**  
 
-To train BART Tokenizer you can use **train_tokenizer.ipynb** scrip that is used to **train a custom tokenizer** on the **PN-summary dataset**, employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
-
-In what follows, you can see some statistics of the PN-summary dataset:
+To train BART Tokenizer you can use **train_tokenizer.ipynb** scrip that is used to **train a custom tokenizer** on the **PN-summary dataset** (see this link to understand characteristics of this dataset: https://huggingface.co/datasets/HooshvareLab/pn_summary), employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
 
 
 The tokenizer is configured with the following parameters:
@@ -85,17 +83,18 @@ To save time during pretraining, we applied various perturbation functions [3] d
 - Sentence Permutation: Randomly shuffle sentences within documents.
 
 #### Dataset Statistics:
-| Attribute                                               |   Value    
-|---------------------------------------------------------|-----------
-| Number of Cleaned Documents                             | 11500000 
-| Number of Rows Cleaned from NAAB                        | 197667045
-| Size of Dataset                                         | 19 GB
-| Total Size of NAAB Used for Cleaning                    | 134 GB     
-| Number of Documents per 'document_rotation' Function    | 2305006     
-| Number of Documents per 'sentence_permutation' Function | 2291018  
-| Number of Documents per 'token_infilling' Function      | 2305881  
-| Number of Documents per 'token_masking' Function        | 2296858  
-| Number of Documents per 'token_deletion' Function       | 2301237  
+
+|-------------------------------------------------------|-----------------|
+| Number of Cleaned Documents                           | 11,500,000      |
+| Number of Rows Cleaned from NAAB                      | 197,667,045     |
+| Size of Dataset                                       | 19 GB           |
+| Total Size of NAAB Used for Cleaning                  | 134 GB          |
+| Documents per `document_rotation` Function            | 2,305,006       |
+| Documents per `sentence_permutation` Function         | 2,291,018       |
+| Documents per `token_infilling` Function              | 2,305,881       |
+| Documents per `token_masking` Function                | 2,296,858       |
+| Documents per `token_deletion` Function               | 2,301,237       |
+
 
 #### Code and Dataset Availability:
 All preprocessing code can be found in the **data_preparation.ipynb** script, located at:
@@ -106,6 +105,7 @@ ri.official80@gmail.com
 
 
 ### 🚦 **Pretraining Execution:**
+In this section, we will explain how we trained BART model.
 - Utilize **Hugging Face Transformers** and **PyTorch** for model training.  
 - Configure **batch size**, **learning rate**, and **epoch settings**.  
 
