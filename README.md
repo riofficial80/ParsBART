@@ -70,7 +70,7 @@ This preprocessing procedure was exclusively applied to the pre-training dataset
 To address these challenges, we adopted the following strategies:
 
 - Streaming Data: Leveraged the streaming feature of Hugging Face Datasets to clean each row individually without needing to load the entire dataset into memory.
-- 
+
 - Session Recovery: Stored the index of the last cleaned row in a file, allowing us to resume preprocessing from the same point in case of session disconnection.
 
 #### Preprocessing Optimizations:
@@ -84,7 +84,6 @@ To save time during pretraining, we applied various perturbation functions [3] d
 
 #### Dataset Statistics:
 
-|-------------------------------------------------------|-----------------|
 | Number of Cleaned Documents                           | 11,500,000      |
 | Number of Rows Cleaned from NAAB                      | 197,667,045     |
 | Size of Dataset                                       | 19 GB           |
