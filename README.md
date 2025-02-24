@@ -9,7 +9,7 @@ Below, we will explain each step of the project in order: 1) training the tokeni
 
 ## 🔡 **Train BART Tokenizer:**  
 
-To train BART Tokenizer you can use **train_tokenizer.ipynb** scrip that is used to **train a custom tokenizer** on the **PN-summary dataset** (see this link to understand characteristics of this dataset: https://huggingface.co/datasets/HooshvareLab/pn_summary), employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
+To train BART Tokenizer, you can use **train_tokenizer.ipynb** script that is used to **train a custom tokenizer** on the **PN-summary dataset** (see this link to understand characteristics of this dataset: https://huggingface.co/datasets/HooshvareLab/pn_summary), employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
 
 
 The tokenizer is configured with the following parameters:
@@ -26,7 +26,6 @@ The tokenizer is configured with the following parameters:
 
 
 The trained tokenizer is **saved** in a **format compatible** with the **`transformers` library**, enabling **smooth integration** with the **BART model** for **Persian text processing**.  
-
 
 
 ---
