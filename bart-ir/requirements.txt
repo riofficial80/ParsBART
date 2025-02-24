@@ -1,0 +1,11 @@
+torch
+transformers
+datasets
+tokenizers
+absl-py
+rouge_score
+nltk
+evaluate
+bert_score
+langdetect
+tqdm
