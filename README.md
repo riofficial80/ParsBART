@@ -9,10 +9,7 @@ Below, we will explain each step of the project in order: 1) training the tokeni
 
 ## 🔡 **Step 1: Train BART Tokenizer**  
 
-To train BART Tokenizer, you can use **train_tokenizer.ipynb** script that is used to **train a custom tokenizer** on the **PN-summary dataset** (see this link to understand characteristics of this dataset: https://huggingface.co/datasets/HooshvareLab/pn_summary), employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
-
-
-The tokenizer is configured with the following parameters:
+To train BART Tokenizer, you can use **train_tokenizer.ipynb** script that is used to **train a custom tokenizer** on the **PN-summary dataset** (see this link to understand characteristics of this dataset: https://huggingface.co/datasets/HooshvareLab/pn_summary), employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The tokenizer is configured with the following parameters:
 
 - **vocab_size=52000**: Sets the vocabulary size to **52,000 tokens**, balancing model expressiveness with memory efficiency.
 - **min_frequency=10**: Establishes the minimum token frequency required for inclusion in the vocabulary, ensuring that rare tokens are excluded to improve model generalization.
