@@ -7,7 +7,7 @@ Below, we will explain each step of the project in order: 1) training the tokeni
 
 ---
 
-## 🔡 **Train BART Tokenizer:**  
+## 🔡 **Step 1: Train BART Tokenizer:**  
 
 To train BART Tokenizer, you can use **train_tokenizer.ipynb** script that is used to **train a custom tokenizer** on the **PN-summary dataset** (see this link to understand characteristics of this dataset: https://huggingface.co/datasets/HooshvareLab/pn_summary), employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
 
@@ -30,9 +30,7 @@ The trained tokenizer is **saved** in a **format compatible** with the **`transf
 
 ---
 
-## 🔄 **Pretraining Process:**  
-
-### ⚙️ **Data Preprocessing:**  
+## ⚙️ **Step 2: Data Preprocessing:**  
 For the pre-training of our language model, a massive amount of data was required. While large datasets were collected, they needed to be thoroughly cleaned to ensure data quality. We implemented a heuristic function to create an automatic cleaning pipeline for our pre-training datasets.
 
 First, for each document in our dataset, we separated sentences and removed those that met any of the following criteria [2]:
@@ -51,19 +49,19 @@ Finally, we removed duplicate paragraphs from documents to maintain content uniq
 
 This preprocessing procedure was exclusively applied to the pre-training datasets.
 
-#### Limitations:
+### Limitations:
 - Large Dataset Size: The Naab dataset is extremely large, which posed challenges in processing with limited computational resources.
 - Resource Constraints: We had access only to Google Colab Free, which: Limits session duration.
 - Is vulnerable to interruptions, such as internet connection drops, which could terminate the session unexpectedly.
 
-#### Handling Colab Session Limitations:
+### Handling Colab Session Limitations:
 To address these challenges, we adopted the following strategies:
 
 - Streaming Data: Leveraged the streaming feature of Hugging Face Datasets to clean each row individually without needing to load the entire dataset into memory.
 
 - Session Recovery: Stored the index of the last cleaned row in a file, allowing us to resume preprocessing from the same point in case of session disconnection.
 
-#### Preprocessing Optimizations:
+### Preprocessing Optimizations:
 To save time during pretraining, we applied various perturbation functions [3] during preprocessing, including:
 
 - Token Infilling: Randomly replace tokens with a mask.
@@ -72,7 +70,7 @@ To save time during pretraining, we applied various perturbation functions [3] d
 - Document Rotation: Rotate sections of documents to improve model generalization.
 - Sentence Permutation: Randomly shuffle sentences within documents.
 
-#### Dataset Statistics:
+### Dataset Statistics:
 
 |                                              |                   |
 |----------------------------------------------|-------------------|
@@ -87,16 +85,16 @@ To save time during pretraining, we applied various perturbation functions [3] d
 | `token_deletion` Function Documents          | 2,301,237         |
 
 
-
-#### Code and Dataset Availability:
+### Code and Dataset Availability:
 All preprocessing code can be found in the **data_preparation.ipynb** script, located at:
 
 
 To access cleaned dataset, please contact using the following email:
 ri.official80@gmail.com
 
+---
 
-### 🚦 **Pretraining Execution**
+## 🔄 **Pretraining Process:**  
 
 This section details the pretraining process for the BART model. The main pretraining script, `pretrain_base.py`, can be found at the specified path.  
 
