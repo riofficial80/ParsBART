@@ -2,17 +2,8 @@
 
 This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transformers)** model, pretrained exclusively on **Persian** text data (**Naab** dataset [1](#references)). The model is designed to handle **natural language processing (NLP)** tasks with a **context length of 256 tokens**.  
 
----
 
-## 🧠 **Key Features:**  
-- 🏗️ **Architecture:** BART with **6 encoder** and **6 decoder** layers.  
-- 📚 **Pretraining:** Using the **Persian Naab dataset** for enhanced language understanding.  
-- 📏 **Context Length:** Supports input sequences of up to **256 tokens**.  
-- 🚀 **Applications:**  
-  - 📝 **Summarization**  
-  - 🌐 **Translation**  
-  - ✍️ **Text Generation**  
-  - 📊 **Classification**  
+Below, we will explain each step of the project in order: 1) training the tokenizer, 2) preparing the data, 3) pretraining the model, and 4) fine-tuning model on different downstream tasks.
 
 ---
 
