@@ -85,7 +85,7 @@ To save time during pretraining, we applied various perturbation functions [3] d
 #### Dataset Statistics:
 
 
-|---------------------------------------------|-------------------|
+
 | Number of Cleaned Documents                  | 11,500,000        |
 | Number of Rows Cleaned from NAAB             | 197,667,045       |
 | Size of Dataset                              | 19 GB             |
