@@ -1,4 +1,4 @@
-# 🌐 **Persian BART**  
+# 🌐 **ParsBART**  
 
 This repository hosts a **6-layer BART (Bidirectional and Auto-Regressive Transformers)** model, pretrained exclusively on **Persian** text data (**Naab** dataset [1]). The model is designed to handle **natural language processing (NLP)** tasks with a **context length of 256 tokens**.  
 
