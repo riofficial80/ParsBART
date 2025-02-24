@@ -7,7 +7,7 @@ Below, we will explain each step of the project in order: 1) training the tokeni
 
 ---
 
-## 🔡 **Step 1: Train BART Tokenizer:**  
+## 🔡 **Step 1: Train BART Tokenizer**  
 
 To train BART Tokenizer, you can use **train_tokenizer.ipynb** script that is used to **train a custom tokenizer** on the **PN-summary dataset** (see this link to understand characteristics of this dataset: https://huggingface.co/datasets/HooshvareLab/pn_summary), employing the **Byte-Pair Encoding (BPE)** algorithm through the **Hugging Face `tokenizers` library**. The mentioned script is located at the following path:
 
@@ -30,7 +30,7 @@ The trained tokenizer is **saved** in a **format compatible** with the **`transf
 
 ---
 
-## ⚙️ **Step 2: Data Preprocessing:**  
+## ⚙️ **Step 2: Data Preprocessing**  
 For the pre-training of our language model, a massive amount of data was required. While large datasets were collected, they needed to be thoroughly cleaned to ensure data quality. We implemented a heuristic function to create an automatic cleaning pipeline for our pre-training datasets.
 
 First, for each document in our dataset, we separated sentences and removed those that met any of the following criteria [2]:
@@ -94,7 +94,7 @@ ri.official80@gmail.com
 
 ---
 
-## 🔄 **Step 3: Pretraining Process:**  
+## 🔄 **Step 3: Pretraining Process**  
 
 This section details the pretraining process for the BART model. The main pretraining script, `pretrain_base.py`, can be found at the specified path.  
 
@@ -127,7 +127,7 @@ The model was trained on a single **NVIDIA L4 GPU** for a total of **179,688 ste
 
 ---
 
-## 🎯 **Step 4: Finetuning:**  
+## 🎯 **Step 4: Finetuning**  
 
 ### 🧠 **Natural Language Understanding (NLU) Tasks:**  
 
@@ -147,7 +147,7 @@ The model was trained on a single **NVIDIA L4 GPU** for a total of **179,688 ste
 
 ---
 
-## 📚 **References** {#references}
+## 📚 **References**
 1. **Sabouri, S., Rahmati, E., Gooran, S. and Sameti, H.**, 2024. *naab: A ready-to-use plug-and-play corpus for Farsi.* *Journal of Artificial Intelligence, Applications and Innovations, 1(2), pp.1-8.*  
    [📄 Full Paper](https://jaiai.iranaiai.ir/article_211486_3e490bce92a8af967a56870c8d200e90.pdf)  
 
