@@ -106,21 +106,36 @@ To access cleaned dataset, please contact using the following email:
 ri.official80@gmail.com
 
 
-### 🚦 **Pretraining Execution:**
-In this section, we will explain how we trained BART model.
-- Utilize **Hugging Face Transformers** and **PyTorch** for model training.  
-- Configure **batch size**, **learning rate**, and **epoch settings**.  
+### 🚦 **Pretraining Execution**
+
+This section details the pretraining process for the BART model. The main pretraining script, `pretrain_base.py`, can be found at the specified path.  
+
+The model was trained using BART’s denoising pretraining strategy. Key model architecture parameters are listed below:  
+
+| **Parameter**                 | **Value** |
+|-------------------------------|-----------|
+| `VOCAB_SIZE`                  | 52,000    |
+| `MAX_POSITION_EMBEDDINGS`     | 256       |
+| `ENCODER_LAYERS`              | 6         |
+| `ENCODER_FFN_DIM`             | 3,072     |
+| `ENCODER_ATTENTION_HEADS`     | 6         |
+| `DECODER_LAYERS`              | 6         |
+| `DECODER_FFN_DIM`             | 3,072     |
+| `DECODER_ATTENTION_HEADS`     | 6         |
+| `D_MODEL`                     | 768       |
+| `DROPOUT`                     | 0.1       |
 
 
-#### 🧬 **Model Architecture:**  
-- **Encoder-Decoder** structure with **6 layers** in each.  
-- Optimized for **Persian language tasks**.  
+The model was trained on a single **NVIDIA L4 GPU** for a total of **179,688 steps** with a **batch size of 64**. The pretrained model, **PARSBART**, is publicly available on the [Hugging Face Hub](https://huggingface.co). Moreover, training hyperparameters are reported in the following table:
 
+| **Parameter**                       | **Value** |
+|-----------------------------------|-----------|
+| `learning_rate`                    | 1e-4      |
+| `per_device_train_batch_size`      | 64        |
+| `per_device_eval_batch_size`       | 64        |
+| `warmup_steps`                     | 1,500     |
+| `weight_decay`                     | 0.01      |
 
-#### 📑 **Pretraining Arguments:**  
-- `--max_length 256`  
-- `--num_beams 4`  
-- `--early_stopping True`  
 
 ---
 
